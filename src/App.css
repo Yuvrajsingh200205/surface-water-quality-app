@@ -1,0 +1,178 @@
+/* Global styles for the app */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e9ecef; /* Soft grey background for interactivity */
+  color: #333;
+}
+
+.App {
+  text-align: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  transition: all 0.3s ease; /* Smooth transition for interactive effects */
+}
+
+.App:hover {
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.2); /* Subtle glow on hover */
+}
+
+/* Header styles */
+header {
+  background-color: #007bff;
+  color: black;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+header:hover {
+  transform: scale(1.02); /* Slight scale-up on hover for interactivity */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+header p {
+  margin: 5px 0 0;
+  font-size: 0.9em;
+}
+
+/* Search container styles */
+.search-container {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.search-container:hover {
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); /* Enhanced shadow on hover */
+}
+
+.search-input {
+  padding: 10px 15px;
+  width: 300px;
+  font-size: 16px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  transform: scale(1.02); /* Slight enlargement on focus */
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+table:hover {
+  box-shadow: 0 6px 12px rgba(0, 123, 255, 0.2); /* Enhanced shadow on hover */
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #dee2e6;
+  transition: background-color 0.3s ease;
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+td {
+  color: #495057;
+}
+
+tr:hover {
+  background-color: #e0e7ff; /* Light blue hover for interactivity */
+}
+
+tr:nth-child(even) {
+  background-color: #f1f3f5;
+}
+
+/* Loading and Error states */
+p {
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+p:hover {
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.error {
+  color: #dc3545;
+  font-weight: 500;
+}
+
+/* Footer styles */
+footer {
+  background-color: #343a40;
+  color: black;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 0.3s ease;
+}
+
+footer:hover {
+  transform: scale(1.02); /* Slight scale-up on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .App {
+    padding: 10px;
+  }
+
+  .search-input {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  th, td {
+    min-width: 120px;
+  }
+}
